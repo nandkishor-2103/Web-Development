@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            /* border: 10px solid black; */
+        }
+
+
+        .item {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            background-color: cornflowerblue;
+            border: 2px solid black;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+    </div>
+</body>
+</html>
