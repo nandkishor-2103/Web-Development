@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card - 01</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+        * {
+            font-family: "Winky Rough", sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            
+        }
+
+        .container {
+            width: 300px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            background-color: #171717;
+            box-shadow: rgba(78, 176, 242, 0.35) 0px 10px 30px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.1);
+        }
+
+        img {
+            width: 290px;
+            /* height:300px; */
+            border-radius: 10px;
+        }
+
+        h3 {
+            color: #FCC61D;
+            letter-spacing: 2px;
+            margin-bottom: -4px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        span  {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            
+        }
+
+        span button {
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #59d127;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        span button:hover {
+            background-color: #439720;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../assets/pexels-gu-ko-2150570603-32882820.jpg"  alt="Girl Stand With Camera">
+        <h3>FUTURISTIC CAMERA</h3>
+        <p>Comming Soon</p>
+        <span class="btn">
+            <button>BUY NOW</button>
+            <button>ADD TO CART</button>
+        </span>
+    </div>
+</body>
+</html>

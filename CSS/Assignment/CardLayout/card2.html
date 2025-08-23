@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card - 02</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+        * {
+            font-family: "Winky Rough", sans-serif;
+        }
+
+      body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        width: 25%;
+        height: 70%;
+        /* border: 2px solid black; */
+        border-radius: 24px;
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .container:hover {
+        transform: scale(1.1);
+      }
+
+      .profile-container {
+        height: 36%;
+        width: 100%;
+        /* border: 5px solid red; */
+        border-radius: 24px 24px 0 0;
+        background-color: #1a89de;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .profile-picture {
+        width: 140px;
+        height: 140px;
+        /* border: 2px solid black; */
+        border-radius: 50%;
+        background-color: #7070f9;
+      }
+
+      .profile-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #faebd7;
+      }
+
+      .profile-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile-details .profile-name {
+        font-size: 23px;
+        font-weight: 500;
+        margin-top: 20px;
+      }
+
+      .profile-details .profile-status {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 5px;
+      }
+
+      .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+      }
+
+      .social-icons .social-icon {
+        font-size: 30px;
+        padding: 0 15px;
+      }
+
+      .action-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 40px;
+      }
+
+      .action-buttons .action-button {
+        border: none;
+        background-color: #0b6ebf;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .action-buttons .action-button:hover {
+        background-color: #094a8f;
+      }
+
+      .analytics {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 30px;
+      }
+
+      .analytics .data {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .analytics .data i {
+        font-size: 20px;
+        color: #1a89de;
+        cursor: pointer;
+      }
+
+      .analytics .data .num {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 5px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile-container">
+        <div class="profile-picture">
+          <img
+            src="../assets/profile-picture.png"
+            alt="Profile Picture"
+            class="profile-image"
+          />
+        </div>
+      </div>
+      <div class="profile-details">
+        <span class="profile-name">Nandkishor Mandal</span>
+        <span class="profile-status">Full Stack Developer</span>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/" class="social-icon"><i class="fa-brands fa-instagram" ></i></a>
+        <a href="https://www.threads.com/" class="social-icon"><i class="fa-brands fa-threads"  ></i></a>
+        <a href="https://www.linkedin.com/in/nandkishormandal/" class="social-icon"><i class="fa-brands fa-linkedin" ></i></a>
+      </div>
+
+      <div class="action-buttons">
+        <button class="action-button">Feedback</button>
+        <button class="action-button">Message</button>
+      </div>
+
+      <div class="analytics">
+        <div class="data">
+            <i class="fa-solid fa-heart"></i>
+            <span class="num">50k</span>
+        </div>
+        <div class="data">
+            <i class="fa-solid fa-message"></i>
+            <span class="num">14k</span>
+        </div>
+        <div class="data">
+            <i class="fa-solid fa-share"></i>
+            <span class="num">21k</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
